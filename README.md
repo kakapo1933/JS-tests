@@ -25,18 +25,11 @@ pnpm run Q1
 
 ## Dependencies
 
-The project has the following dependencies:
-
-- `react`: ^18.2.0
-- `react-dom`: ^18.2.0
-
 ## Dev Dependencies
 
 The project has the following dev dependencies:
 
 - `typescript`: ^5.6.2
-- `@types/react`: ^18.2.0
-- `@types/react-dom`: ^18.2.0
 
 ## Examples
 
