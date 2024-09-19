@@ -1,0 +1,21 @@
+{
+  "name": "js-tests",
+  "version": "1.0.0",
+  "description": "some js tests",
+  "type": "module",
+  "main": "",
+  "scripts": {
+    "Q1": "node Q1.js",
+    "Q2": "open -a 'Google Chrome' Q2.html",
+    "Q3": "node Q3.js",
+    "Q4": "rm -f Q4.js && tsc Q4.ts && node Q4.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

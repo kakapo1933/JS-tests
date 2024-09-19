@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="header">5/8 外出確認表</div>
+    <div class="content">
+        <ol class="shop-list">
+            <li class="item">麵包</li>
+            <li class="item">短袖衣服</li>
+            <li class="item">飲用水</li>
+            <li class="item">帳篷</li>
+        </ol>
+        <ul class="shop-list">
+            <li class="item">車車藥</li>
+            <li class="item">廚房紙</li>
+            <li class="item">牙木斯</li>
+            <li class="item">咳嗽糖漿</li>
+        </ul>
+    </div>
+    <div class="footer">以上僅供參考</div>
+</div>
+
+<style>
+.container {
+    font-size: 14px;
+}
+
+.container .header {
+    font-size: 18px;
+}
+
+.container .shop-list {
+    list-style: none;
+    margin-left: -15px;
+}
+
+
+
+
+/* General selector for all items */
+.container .shop-list li.item {
+    color: green;
+}
+
+/* Answer for Question 1 */
+/*
+This selector is not working because it's less specific than the previous selectors.
+The cascade in CSS gives priority to more specific selectors.
+In this case, both ".container .content > .shop-list:nth-child(1) li.item" and
+".container .shop-list li.item" are more specific, so they override this rule.
+To make this work, you'd need to increase its specificity or use !important,
+but it's generally better to refactor the selectors for clarity and maintainability.
+
+.container .shop-list .item {
+    color: blue;
+}
+*/
+/* Specific selector for the first list within .content */
+.container .content > .shop-list:nth-child(1) li.item {
+    color: blue;
+}
+
+/* Answer for Question 2 */
+/* Apply background color to every other line */
+.container .shop-list .item:nth-child(odd) {
+    background-color: #f0f0f0; /* Example background color */
+}
+</style>
